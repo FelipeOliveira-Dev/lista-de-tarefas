@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/scroollbar.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="lista-container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <!--Formulário de adicionar tarefas-->
+        <form action="" id="add-tarefa">
+            <p>Adicionar nova tarefa</p>
+            <div class="form-control">
+                <input type="text" id="input-tarefa" placeholder="Que tarefa você vai adiconar?">
+                <textarea type="text" id="add-desc-tarefa" rows="2" cols="100" placeholder="Uma pequena descrição da sua tarefa"></textarea>
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <!--Formulário de editar tarefas-->
+        <form action="" id="edicao-tarefa" class="esconder">
+            <p>Editar tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="editar-tarefa">
+                <textarea type="text" rows="2" cols="100" id="editar-desc-tarefa"></textarea>
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="btn-cancelar-edicao">Cancelar</button>
+        </form>
+
+        <!--Toolbar-->
+        <section id="caixa-de-ferramentas">
+            <div id="pesquisa">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="input-busca" placeholder="Buscar">
+                    <button id="btn-apagar">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filtro">
+                <h4>Filtrar:</h4>
+                <select id="selecao-filtro">
+                    <option value="tudo">Tudo</option>
+                    <option value="feitas">Feito</option>
+                    <option value="fazer">A fazer</option>
+                </select>
+            </div>
+        </section>
+
+        <!--Lista de tarefas-->
+        <section id="lista-tarefas">
+            <!--Modelo Tarefa-->
+            <!-- <div class="tarefa">
+                <div class="titulo-desc">
+                    <h3>Fazer trabalho de web 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <button class="termina-tarefa">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edita-tarefa">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-tarefa">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div> -->
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

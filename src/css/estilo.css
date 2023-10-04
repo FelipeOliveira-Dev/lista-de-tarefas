@@ -1,0 +1,203 @@
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest', sans-serif;
+    color: #6B7280;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(../img/img-fundo.jpg);
+    background-position: center;
+    background-size: cover; */
+    background-color: #374151;
+}
+
+.esconder{
+    display: none;
+}
+
+button{
+    background-color: #1f2937;
+    color: #6B7280;
+    border: none;
+    /* border: 2px solid #6B7280; */
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+button:hover{
+    background-color: #6B7280;
+    color: #1f2937;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+button i{
+    pointer-events: none;
+    color: #6B7280;
+    font-weight: bold;
+}
+
+button:hover > i{
+    color: #1f2937;
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+/* Cabeçalho lista */
+.lista-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #111827;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.lista-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 2px solid #e8f1f2;    
+}
+
+/*Formularios add e edit*/
+#add-tarefa, #edicao-tarefa{
+    padding: 1rem;
+    border-bottom: 2px solid #e8f1f2;
+}
+
+#add-tarefa p, #edicao-tarefa p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+    width: 100%;
+    background-color: #1F2937;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-control textarea{
+    margin-top: 0.5rem;
+    margin-right: 0.3rem;
+    width: 100%;
+    background-color: #1F2937;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+.form-control button{
+    margin-top: 0.5rem;
+}
+
+#btn-cancelar-edicao{
+    margin-top: 1rem;
+}
+
+/* Caixa de ferramentas */
+#caixa-de-ferramentas{
+    padding: 1rem;
+    border-bottom: 2px solid #e8f1f2;
+    display: flex;
+}
+
+#caixa-de-ferramentas h4{
+    margin-bottom: 0.5rem;
+}
+
+#pesquisa{
+    border-right: 2px solid #e8f1f2;
+    padding-right: 1rem;
+    border-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pesquisa form{
+    display: flex;
+}
+
+#pesquisa input{
+    width: 100%;
+    margin-right: 0.3rem;
+    background-color: #1F2937;
+    border: none;
+    border-radius: 2px;
+}
+
+#filtro{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filtro select{
+    flex: 1;
+    background-color: #1F2937;
+    color: #6B7280;
+    font-weight: bold;
+}
+
+/* Lista de tarefas */
+.tarefa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #e8f1f2;
+    transition: 0.5s;
+}
+
+.tarefa h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.tarefa p{
+    flex: 1;
+    font-size: 0.7rem;
+}
+
+.tarefa button{
+    margin-left: 0.5rem;
+}
+
+.feito{
+    background-color: #1F2937;
+}
+
+.feito h3{
+    color: #111827;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.feito p{
+    color: #111827;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#lista-tarefas{
+    max-height: 220px;
+    overflow-y: scroll;
+}
